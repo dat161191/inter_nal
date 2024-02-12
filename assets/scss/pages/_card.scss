@@ -1,0 +1,200 @@
+.card-group {
+  display: flex;
+  width: 359px;
+  margin: 10px 20px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-200, #edecec);
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  &:hover {
+    box-shadow: 0 4px 20px 0 rgba(255, 33, 0, 0.19);
+    border: 1px solid var(--red-0, #ffbab0);
+  }
+}
+.group-name {
+  width: 210px;
+  overflow: hidden;
+  color: var(--main-text-color, #3f3f41);
+  font-size: 16px;
+  font-family: Roboto; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.logo-group {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #f4371a;
+}
+.avatar-user,
+.overflow {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  margin-right: -6px;
+  z-index: 98;
+  border: 2px solid #fff;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.overflow {
+  text-align: center;
+  background-color: #f4371a;
+  color: #fff;
+  font-size: 12px;
+  font-family: Roboto; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.group-type {
+  white-space: nowrap;
+  width: 75px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 92px;
+  font-size: 13px;
+  font-family: Roboto; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+.non-tech {
+  color: var(--orange-300, #b26b2c);
+  background-color: #f0d7c1;
+}
+.project {
+  color: var(--green-400, #3a871e);
+  background-color: #d6f3cc;
+}
+.tech {
+  color: var(--green-400, #2f1f8b);
+  background-color: #ccd0f3;
+}
+.task-icon {
+  width: 26px;
+  height: 26px;
+  margin: -8px 5px 0 13px;
+}
+.task-text {
+  white-space: nowrap;
+  color: #3e3f42;
+  font-size: 16px;
+  font-family: Roboto; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.task-number {
+  margin-right: 5px;
+  display: inline-block;
+  color: var(--red-200, #f4371a);
+  font-size: 20px;
+  font-family: Roboto; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.col-height {
+  width: 100%;
+  height: 65px;
+}
+.group-description {
+  height: 60px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 16px;
+  font-family: Roboto; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--gray-700, #666565);
+}
+.group-hr {
+  margin-top: -13px;
+  height: 1px;
+  background: #e0dede;
+}
+.box-member {
+  height: 32px;
+  margin-top: -10px;
+}
+@media screen and (max-width: $max-width-tablet) {
+  .card-group {
+    margin: 10px;
+    width: 300px;
+  }
+  .task-icon {
+    margin: -8px 5px 0 22px;
+  }
+  .group-name {
+    width: 190px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: $max-width-tablet-small) {
+  .group-col-flex {
+    display: flex;
+  }
+  .card-group {
+    margin: 10px auto;
+    width: 100%;
+    max-width: 359px;
+  }
+  .group-name {
+    width: 90%;
+  }
+}
+@media screen and (max-width: $max-width-mobile) {
+  .group-col-flex {
+    display: flex !important;
+  }
+  .logo-group {
+    width: 55px;
+    height: 55px;
+  }
+  .box-member {
+    margin-top: 0;
+  }
+  .card-group {
+    padding: 10px;
+  }
+  .task-text {
+    font-size: 13px;
+  }
+  .task-number {
+    font-size: 17px;
+    margin-right: 0;
+  }
+  .group-type {
+    margin-top: -4px;
+    width: 61px;
+  }
+  .task-icon {
+    margin: -8px 0 0 20px;
+  }
+  .overflow,
+  .avatar-user {
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+  }
+  .overflow {
+    font-size: 10px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,147 @@
+.avatar {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dropdown-btn {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.page-name {
+  display: inline-block;
+  color: $page-name;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  line-height: normal;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  overflow: hidden;
+}
+.page-active {
+  color: $color-grey;
+}
+
+.font-color {
+  color: $color-logo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.avatar:hover {
+  border: 2px solid $color-logo;
+}
+.text-name {
+  margin-right: 15px;
+  align-items: center;
+  display: inline-block;
+}
+.hello {
+  text-align: left;
+  color: $color-text;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: -11px;
+}
+.box-notification {
+  position: relative;
+}
+.number-notification {
+  position: absolute;
+  background-color: $color-logo;
+  color: $color-white;
+  top: -5px;
+  line-height: 15px;
+  left: 15px;
+  font-size: 11px;
+  text-align: center;
+  align-items: center;
+  border: 2px solid $color-white;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+.dropdown-icon {
+  width: 32px;
+  height: 32px;
+}
+.name {
+  margin-top: 15px;
+  color: $color-text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+.row {
+  margin-left: 0 !important;
+}
+.drop-item {
+  cursor: pointer;
+  color: $dropdown-item-color;
+  margin-left: -20px;
+  margin-right: 25px;
+}
+.icon-nav-bar {
+  cursor: pointer;
+  margin-right: 15px;
+  height: 32px;
+  width: 32px;
+}
+.page {
+  width: 400px;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: $max-width-tablet-normal) {
+  .page {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .col-flex, .row {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 572px) {
+  .icon-nav-bar,
+  .avatar {
+    margin-right: 15px;
+  }
+  .text-name {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .avatar {
+    margin-left: -15px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .font-color {
+    display: none;
+  }
+}
+@media screen and (max-width: 345px) {
+  .dropdown-icon {
+    margin-right: -5px !important;
+  }
+  .avatar {
+    margin-right: 10px;
+  }
+  .icon-nav-bar {
+    margin-right: 10px;
+  }
+}
+

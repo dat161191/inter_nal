@@ -1,0 +1,37 @@
+.description-member {
+  width: 100%;
+  color: $black;
+  .left-arrow {
+    height: 2.75rem;
+    font-size: 1rem;
+  }
+  .right-slide {
+    top: 4.5rem;
+    min-height: 100vh;
+    .right-arrow {
+      background-color: $gray-1200;
+      height: 2.75rem;
+      font-size: 1rem;
+      .icons-edit {
+        padding-left: 0.375rem;
+      }
+    }
+    .member-description {
+      background-color: $white;
+      padding-left: 0.5rem;
+      font-size: 0.875rem;
+      min-height: 100vh;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 922px) {
+    .text-description {
+      display: none;
+    }
+    .member-description {
+      .link-info {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

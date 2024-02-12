@@ -1,0 +1,5 @@
+{
+  "VAL-REC-0016": "Field fee is numeric",
+  "VAL-REC-0017": "Field comment is string",
+  "VAL-PAC-0003": "Field name is max 45"
+}

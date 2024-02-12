@@ -1,0 +1,135 @@
+.login-container {
+  height: 100vh;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  .tranlate-container {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+  }
+  .login-form-container {
+    background-color: $white;
+    width: 70.2rem;
+    height: 35rem;
+    padding: 0;
+    label {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $gray-900;
+    }
+    form {
+      width: 100%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    input {
+      font-size: 0.8125rem;
+      height: 3rem;
+      border: 0.0625rem solid $gray-2000;
+      background-color: $gray-2100;
+      &:focus {
+        box-shadow: 0 0 0.3125rem 0 $blue !important;
+      }
+    }
+    .login-img {
+      width: 100%;
+      height: auto;
+    }
+    .logo-nal {
+      margin-bottom: 1.25rem;
+      .logo-nal-img {
+        width: 9.7rem;
+        height: 3.32775rem;
+      }
+    }
+    .title-group {
+      margin-bottom: 1.25rem;
+      .title_review360 {
+        color: $red-0;
+        font-size: 2.4375rem;
+        line-height: 2.85625rem;
+      }
+      .title_login {
+        color: $blue-0;
+        font-size: 1.5625rem;
+        line-height: 1.83125rem;
+      }
+      .title_email_password {
+        color: $gray-2300;
+        font-size: 1rem;
+      }
+    }
+    .input-email {
+      .email-errors {
+        width: 100%;
+        height: 1.25rem;
+        font-size: 0.6rem;
+      }
+    }
+    .input-password {
+      .password-error {
+        width: 100%;
+        height: 1.25rem;
+        font-size: 0.6rem;
+      }
+    }
+    .login-button,
+    .disable-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      border: none;
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.3125rem;
+      color: $white;
+      font-size: 1rem;
+    }
+    .login-button {
+      background-color: $red-0;
+      cursor: pointer;
+    }
+    .disable-button {
+      background-color: $red-100;
+      cursor: not-allowed;
+    }
+    .login_gg {
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+    }
+    .login_gg:hover {
+      transform: scale(1.2);
+    }
+    a {
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .open_eye {
+      top: 2rem;
+      right: 0.625rem;
+      cursor: pointer;
+    }
+    .close_eye {
+      top: 2.5rem;
+      right: 0.8rem;
+      color: $gray-800;
+      cursor: pointer;
+    }
+    .forgot_password {
+      font-size: 0.8125rem;
+      color: $gray-2200 !important;
+    }
+    .translate {
+      cursor: pointer;
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

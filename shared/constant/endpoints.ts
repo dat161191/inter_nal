@@ -1,0 +1,13 @@
+export const URL_LOGIN = 'auth/login';
+export const URL_LOGOUT = '/auth/logout';
+export const URL_REFRESH_TOKEN = '/admin/auth/refresh-token';
+export const URL_GROUPS = '/groups';
+export const URL_GET_ME = '/me';
+export const URL_GROUPS_LOGO = '/media';
+export const URL_FORM = '/template-forms';
+export const URL_MEMBERS = (id: string) => `/users/${id}`;
+export const URL_POSITION = '/positions';
+export const URL_GROUPS_DETAIL = (id: string) => `${URL_GROUPS}/${id}`;
+export const URL_MEMBER_OPTIONS = (id: string) => `/users${URL_GROUPS}/${id}`;
+export const URL_FORM_DELETE = (id: string) => `${URL_FORM}/${id}`;
+export const URL_GROUPS_ID_MEMBERS = (id: string) => `${URL_GROUPS}/${id}/members`;

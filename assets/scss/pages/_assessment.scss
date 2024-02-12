@@ -1,0 +1,197 @@
+.card-assessment {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid $border-card;
+  background: $bg-card;
+}
+.avatar-groups {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 100px;
+}
+.center-name-group {
+  padding-left: 0;
+  margin-left: -5px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: $font-weight-text;
+  color:  $color-text;
+}
+.truncate-name-group {
+  margin-left: 18px;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate-form {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.total-assessment {
+  margin-left: 5px;
+  color: $color-grey;
+}
+.display-assessment {
+  display: inline;
+}
+.display-assessment-mobile {
+  display: none;
+}
+.btn-text-assessment {
+  white-space: nowrap;
+  color: $btn-color-white;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.btn-add-assessment {
+  float: right;
+  border-radius: 5px;
+  background: $color-logo;
+  display: flex;
+  height: 48px;
+  padding: 11px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 230px;
+}
+.adjust-total {
+  margin-left: -15px;
+}
+.width-card {
+  width: 99%;
+  float: right;
+}
+@media only screen and (max-width: $max-width-tablet-pro) {
+  .truncate-date {
+    width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media only screen and (max-width: $max-width-tablet) {
+  .width-card {
+    width: 98%;
+  }
+}
+@media only screen and (max-width: $max-width-tablet-small) {
+  .display-attribute {
+    display: none;
+  }
+  .truncate-date {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-assessment {
+    float: left;
+    margin-left: 30px;
+    overflow: hidden;
+    padding: 20px 0 0 20px;
+    width: 90%;
+  }
+  .position-icon-delete {
+    margin-left: 90%;
+  }
+  .btn-icon-delete {
+    height:40px;
+    width:40px;
+    border-radius: 10px 0 0 0;
+    border-left: 1px solid $border-card;
+    border-top: 1px solid $border-card;
+  }
+  .center-icon-delete {
+    margin: 5px 0 0 3px;
+  }
+  .display-assessment {
+    display: none;
+  }
+  .display-assessment-mobile {
+    display: inline;
+  }
+  .center-content {
+    display: flex;
+    align-items: normal;
+    justify-content: normal;
+  }
+  .adjust-value {
+    margin-left: 10px;
+  }
+  .width-attribute {
+    width: 120px;
+    height: 20px;
+  }
+  .adjust-bottom {
+    margin-bottom: -35px;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: $max-width-mobile) {
+  .card-assessment {
+    margin-left: 0;
+    overflow: hidden;
+    padding: 20px 0 0 20px;
+    width: 100%;
+  }
+  .width-attribute {
+    width: 90px;
+    height: 20px;
+  }
+  .adjust-bottom {
+    margin:0 0 0 -10px;
+  }
+  .position-icon-delete {
+    margin-left: 0;
+
+  }
+  .btn-icon-delete {
+    height:36px;
+    width:36px;
+  }
+  .btn-icon-delete:hover {
+    background-color: $bg-hight-light;
+  }
+  .float-right-icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .center-icon-delete {
+    margin: 2px 1px 0 0;
+  }
+}
+@media only screen and (max-width: $max-width-mobile-small) {
+  .width-attribute {
+    font-size: 13px;
+    width: 70px;
+  }
+  .card-assessment {
+    width: 105%;
+  }
+  .adjust-bottom {
+    margin:0 0 0 -15px;
+  }
+  .adjust-value {
+    font-size: 13px;
+  }
+  .btn-add-assessment {
+    width: 175px;
+  }
+  .title-form-list {
+    width: 195px;
+  }
+}

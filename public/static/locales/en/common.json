@@ -1,0 +1,8 @@
+{
+  "app_name": "Account Console",
+  "title": "Home",
+  "logout": "Logout",
+  "user_management": "User Management",
+  "mail_address": "Mail address",
+  "password": "Password"
+}

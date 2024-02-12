@@ -1,0 +1,129 @@
+.mb-10p {
+  margin-bottom: 10px !important;
+}
+.ml-12p {
+  margin-left: 12px !important;
+}
+.mt-2p {
+  margin-top: 2px !important;
+}
+.mt-3p {
+  margin-top: 3px !important;
+}
+.mt-10p {
+  margin-top: 10px !important;
+}
+
+// padding
+.pt-2p {
+  padding-top: 2px !important;
+}
+.pt-12p {
+  padding-top: 12px !important;
+}
+.pt-29p {
+  padding-top: 29px !important;
+}
+.pt-40p {
+  padding-top: 40px !important;
+}
+
+// height
+.height-by-px-24 {
+  height: 24px !important;
+}
+// width
+.width-20p {
+  width: 20px !important;
+}
+
+// line-height
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.tilde-line {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  height: 4px;
+  line-height: 4px;
+}
+// display
+.flex-center {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+// tag
+
+.tag {
+  &-item {
+    background-color: rgba(83, 105, 248, 0.2);
+    @include border-radius(3px);
+
+    color: $primary;
+    font-size: 14px;
+    font-weight: 600;
+    @include flexbox;
+    @include align-items(center);
+
+    height: 21px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 0 7px;
+    white-space: nowrap;
+  }
+  &-icon-remove {
+    color: $primary;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 5px;
+    height: 7px;
+    margin-left: 5px;
+  }
+}
+.icon-selection-dropdown {
+  border-color: #adb5bd transparent transparent transparent;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  display: block;
+  height: 0;
+  width: 0;
+}
+.table {
+  .service-contract-highlight {
+    td,
+    th {
+      border-color: $bg-gray;
+    }
+  }
+  .payment-highlight {
+    td,
+    th {
+      border-color: #ffaab7;
+    }
+  }
+}
+
+.btn-link-grey {
+  color: $gray-600;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+.total-summary-block {
+  .row-item {
+    @include flexbox;
+
+    border-bottom: 1px solid $table-border-default-color;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+}
+

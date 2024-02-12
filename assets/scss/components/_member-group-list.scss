@@ -1,0 +1,80 @@
+.content-page {
+  margin-top: 42px;
+  margin-right: 0;
+  padding: 0 0 0 0;
+  .group-detail-page {
+    .member-list {
+      .card-container {
+        min-height: 100%;
+        width: 100%;
+        border: 0.0625rem solid $gray-1400;
+        border-radius: 0.625rem;
+        &:hover {
+          box-shadow: 0 0.25rem 2.5rem 0.25rem $redRgba;
+        }
+        .card-header-content {
+          .image-three-dot {
+            position: relative;
+            width: 1.5625rem;
+            height: 1.5625rem;
+          }
+        }
+        .card-avatar {
+          .avatar-member {
+            position: relative;
+            width: 5.9375rem;
+            height: 5.9375rem;
+            .img-member {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      .card-info-member {
+        font-size: 1rem;
+        .position-member,
+        .position-non-tech,
+        .position-sm,
+        .position-apo,
+        .position-pm-po {
+          width: 6.75rem;
+          height: 2.1875rem;
+          border-radius: 5.75rem;
+        }
+        .position-member {
+          background-color: $green-0;
+          color: $green-100;
+        }
+        .position-non-tech {
+          background-color: $orange-0;
+          color: $orange-100;
+        }
+        .position-sm {
+          background-color: $blue-100;
+          color: $blue-200;
+        }
+        .position-apo {
+          background-color: $violet-100;
+          color: $violet-200;
+        }
+        .position-pm-po {
+          background-color: $red-100;
+          color: $red-200;
+        }
+      }
+      .show-members,
+      .hide-members {
+        font-size: 1rem;
+        color: $red-0;
+      }
+    }
+  }
+}
+.message-error {
+  height: 1.5rem;
+  font-size: 1rem;
+  color: $red-0;
+  padding: 0.125rem 0 0.125rem 0;
+}

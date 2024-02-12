@@ -1,0 +1,307 @@
+.card-form {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid $border-card;
+  background: $bg-card;
+}
+.card-hover :hover {
+  background: $bg-card-hover;
+  cursor: pointer;
+}
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-name {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: $font-weight-text;
+  color:  $color-text;
+}
+.size-text-form {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: $font-weight-text;
+  color:  $box-sort-color;
+}
+.width-row {
+  width: 100%;
+}
+.row-spacing {
+  margin-bottom: 10px;
+}
+.center-title-icon {
+  margin-left: -5px;
+  white-space: nowrap;
+}
+.center-icon {
+  margin-right: -20px;
+}
+.truncate-name {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate-email {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.icon-delete-1 {
+  color: $color-icon-delete;
+  font-size: 32px;
+  transition: box-shadow 0.3s;
+}
+.icon-chevron-down {
+  color: $box-sort-color;
+  font-size: 32px;
+}
+.icon-add {
+  color: $btn-color-white;
+  font-size: 26px;
+}
+.icon-GroupSearch {
+  color: $dropdown-item-color;
+  font-size: 29px;
+  margin-bottom: -36px;
+  margin-left: 10px;
+  display: flex;
+}
+.box-sort-by {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  float: right;
+  color: $box-sort-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.title-form-list {
+  white-space: nowrap;
+  color: $page-name;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.total-form {
+  margin-left: 5px;
+  color: $color-grey;
+}
+.btn-add-form {
+  float: right;
+  border-radius: 5px;
+  background: $color-logo;
+  display: flex;
+  height: 48px;
+  padding: 11px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.btn-text-form {
+  white-space: nowrap;
+  color: $btn-color-white;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.search-input-form {
+  width: 220px;
+  display: flex;
+  padding: 10px 28px 10px 49px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid $input-color-white;
+  background: $border-color-white;
+}
+.height-card-form {
+  height: 48px;
+}
+.display-card-mobile {
+  display: none;
+}
+@media only screen and (max-width: $max-width-tablet-pro) {
+  .truncate-email {
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .title-form-list {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: $max-width-tablet) {
+  .center-title-icon {
+    margin-left: -10px;
+  }
+  .center-icon {
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: -5px;
+  }
+  .total-form {
+    display: none;
+  }
+  .btn-add-form {
+    width: 230px;
+  }
+  .btn-text-form {
+    font-size: 13px;
+  }
+  .title-form-list {
+    font-size: 25px;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media only screen and (max-width: $max-width-tablet-small) {
+  .center-title-icon {
+    margin-left: -15px;
+  }
+  .center-icon {
+    padding-right: 0;
+  }
+  .total-form {
+    display: none;
+  }
+  .title-form-list {
+    font-size: 25px;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .btn-add-form {
+    width: 230px;
+  }
+}
+@media only screen and (max-width: $max-width-mobile) {
+  .display-card-pc {
+    display: none;
+  }
+  .display-card-mobile {
+    display: inline;
+  }
+  .display-title {
+    display: none;
+  }
+  .sort-by {
+    font-size: 15px;
+  }
+  .card-form-mobile {
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid $border-card;
+    background: $bg-card;
+  }
+  .search-input-form {
+    width: 100%;
+  }
+  .title-form-list {
+    font-size: 18px;
+  }
+  .btn-text-form {
+    font-size: 13px;
+  }
+  .box-sort-by {
+    padding: 0;
+  }
+  .adjust-input-search {
+    margin-top: 65px;
+    margin-bottom: -10px;
+  }
+  .btn-add-form {
+    width: 230px;
+    height: 45px;
+  }
+  .content-form {
+    margin-top: 50px;
+  }
+  .card-form {
+    padding: 20px 20px 0;
+    height: 150px;
+  }
+  .btn-delete {
+    height:36px;
+    width:36px;
+    float: right;
+    border-radius: 10px 0 0 0;
+    border-left: 1px solid $border-card;
+    border-top: 1px solid $border-card;
+  }
+  .btn-delete:hover {
+    background-color: $bg-hight-light;
+  }
+
+  .icon-delete-1 {
+    float: right;
+    border-radius: 10px;
+  }
+  .icon-delete-1:hover {
+    font-size: 35px;
+    background-color: $bg-hight-light;
+  }
+  .Adjust-distance {
+    margin-top: 18px;
+  }
+  .truncate-name {
+    margin-left: 12px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .truncate-email {
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media only screen and (max-width: $max-width-mobile-small) {
+  .title-form-list {
+    font-size: 15px;
+    margin-left: -5px;
+  }
+  .btn-add-form {
+    width: 180px;
+  }
+  .btn-text-form {
+    font-size: 10px;
+  }
+  .truncate-name {
+    margin-left: 12px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .truncate-email {
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
